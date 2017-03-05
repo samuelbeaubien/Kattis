@@ -1,28 +1,39 @@
 package assignment3;
-import java.util.HashMap;
-
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
 
 public class Test {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws FileNotFoundException
 	{
+		File file = new File("/Users/samuelbeaubien/Documents/workspace/COMP321/src/input.txt/");
+		Scanner sc = new Scanner(file);
 		
-		int[] testArray = new int[26];
+		//String x = sc.nextLine();
+		//System.out.println(x);
 		
-		Peragrams_260691877.includeChar(testArray, 'd');
-		Peragrams_260691877.includeChar(testArray, 'a');
-		Peragrams_260691877.includeChar(testArray, 'z');
-		Peragrams_260691877.includeChar(testArray, 'z');
+		//yolo(sc);
 		
-		System.out.print(Peragrams_260691877.countOdd(testArray, 26));
+		//x = sc.nextLine();
+		//System.out.println(x);
 		
-		
-		
-		
-		
+		int[] yolo = {1,2,3,4,6,7,8,9,10,11};
 		
 		
 		
+		int correctIndex = Math.abs(Arrays.binarySearch(yolo, 5)) - 1;
+		
+		System.out.println(correctIndex);
+		
+		
+	}
+	
+	public static void yolo(Scanner sc) 
+	{
+		String y = sc.nextLine();
+		System.out.println(y);
 		
 	}
 	
